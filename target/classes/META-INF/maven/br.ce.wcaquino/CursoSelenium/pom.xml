@@ -14,12 +14,6 @@
 			<version>3.4.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.cedrotech</groupId>
-			<artifactId>CadastroUimaps</artifactId>
-			<version>0.0.1</version>
-		</dependency>
-
 	</dependencies>
 
 	<build>

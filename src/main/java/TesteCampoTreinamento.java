@@ -11,8 +11,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import com.cedrotech.cadastrouimap.CadastroMap;
-
 
 public class TesteCampoTreinamento {
 
@@ -70,9 +68,6 @@ public class TesteCampoTreinamento {
 
 		// driver.quit();
 		
-		CadastroMap map = new CadastroMap();
-		driver.findElement(map.teste3);
-
 	}
 	
 	@Test
@@ -178,6 +173,9 @@ public class TesteCampoTreinamento {
 		// Assert.assertTrue(driver.findElement(By.tagName("body")).
 		//		getText().contains("Campo de Treinamento"));
 		Assert.assertEquals("Campo de Treinamento", driver.findElement(By.tagName("h3")).getText());
+		
+		Assert.assertEquals("Cuidado onde clica, muitas armadilhas...", driver.findElement(By.className("facilAchar")).getText());
+		
 		driver.quit();
 	}
 }
